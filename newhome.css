@@ -1,0 +1,168 @@
+/**** Basic 1 ****/
+
+/* nav {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    justify-items: center;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    text-decoration: none;
+    color: black;
+} */
+
+/**** Basic 2 ****/
+
+/* nav {
+    margin: 10px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    text-decoration: none;
+    color: black;
+} */
+
+/**** Hover ****/
+
+/* nav {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    justify-items: center;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    text-decoration: none;
+    color: #3FAABF;
+}
+
+nav a:hover {
+    background: #3FAABF;
+    border: 1px solid white;
+    color: white;
+} */
+
+/**** Radius ****/
+
+/* nav {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    justify-items: center;
+    text-align: center;
+  }
+  
+nav a {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none; /* removes underline...
+    color: #3FAABF;
+} */
+
+/***** Final ****/
+
+* {
+    font-family: Courier, monospace;
+}
+
+nav {
+    margin: 10px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+nav a {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin: 10px;
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    margin: 10px;
+    border: 1px solid red;
+    text-align: center;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+/* main section #profile_pic {
+    padding: 10px; 
+    margin: 50px;
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* main section {
+    margin: 10px;
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* Center the image */
+main .profile_pic {
+    border: 1px solid red;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style for the image */
+main .profile_pic img {
+    border: 1px solid red;
+    max-width: 65%;
+    height: auto;
+}
+
+/* Style for the box containers */
+main .box-container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  /* margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; */
+}
+
+/* Style for the individual boxes */
+main .box {
+    border: 1px solid red;
+    width: calc(50% - 10px);
+    background-color: #ccc;
+}
