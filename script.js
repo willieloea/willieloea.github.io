@@ -1,6 +1,8 @@
-const toggleBtn = document.getElementById('toggle-btn');
-const body = document.body;
+// I don't know any JavaScript. ChatGPT wrote this.
+const toggleBtns = document.querySelectorAll("#toggle-btn1, #toggle-btn2");
 
-toggleBtn.addEventListener('click', function() {
-  body.classList.toggle('dark-mode');
+toggleBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
 });
