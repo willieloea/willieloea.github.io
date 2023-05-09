@@ -5,7 +5,14 @@
     <title>Willie L-E</title>
   </head>
   <body>
-    <!-- limit width to middle third or quarter -->
+    
+    <!-- used to store light/dark mode of website -->
+    <script>
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+      }
+    </script>
+  
     <nav>
       <a href="./index.html">Home</a>
       <a href="https://github.com/willieloftieeaton">GitHub</a>
@@ -20,9 +27,26 @@
       <h1>Things I want to share with the world</h1>
     </header>
     <main>
-        
-      <p>I'm still learning how to make a website. I'll share things here when I know more.</p>
-
+      <div class="share_w_wrld">
+        <h2>Concepts:</h2>
+        <ul>
+          <li>Emergence</li>
+          <li>Cellular Automata</li>
+          <li>Computation</li>
+        </ul>
+        <h2>People that inspire me:</h2>
+        <ul>
+          <li>Lex Fridman</li>
+          <li>Cronje Loftie-Eaton (my dad)</li>
+        </ul>
+        <h2>Musicians/bands I enjoy:</h2>
+        <ul>
+          <li>PACKS</li>
+          <li>Princess Chelsea</li>
+          <li>Grimes</li>
+          <li>Alt-J</li>
+        </ul>
+      </div>
     </main>
     <footer id="foot">
       <nav>

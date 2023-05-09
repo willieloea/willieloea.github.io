@@ -5,7 +5,14 @@
     <title>Willie L-E</title>
   </head>
   <body>
-    <!-- limit width to middle third or quarter -->
+
+    <!-- used to store light/dark mode of website -->
+    <script>
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+      }
+    </script>
+
     <nav>
       <a href="./index.html">Home</a>
       <a href="https://github.com/willieloftieeaton">GitHub</a>
@@ -20,6 +27,17 @@
     <main>
       <div class="profile_pic">
         <img src="./pictures/profile_picture.jpg" alt="profile picture">
+      </div>
+
+      <div class="about-me-container">
+        <h2>About Me</h2>
+        <a>
+          I am a third year BSc Computer Science student at the University of Stellenbosch. 
+          I enjoy studying Mathematics, Statistics, and Computer Science. 
+          In my free time I practice guitar and run (training for a marathon).
+          I hope to have an impactful career and tackle problems such as verification of 
+          information authenticity, AI safety and interpretability, and improved education/information access.
+        </a>
       </div>
 
       <div class="box-container">

@@ -4,5 +4,6 @@ const toggleBtns = document.querySelectorAll("#toggle-btn1, #toggle-btn2");
 toggleBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
+    localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
   });
 });
