@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./style.css">
     <title>Willie L-E</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
   </head>
   <body>
 
@@ -13,56 +18,74 @@
       }
     </script>
 
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="https://github.com/willieloftieeaton">GitHub</a>
-      <a href="https://www.linkedin.com/in/willie-loftie-eaton-2a1666206/">Linkedin</a>
-      <a href="./notice_board.html">Notice Board</a>
-      <button id="toggle-btn1">Light/Dark</button>
-    </nav>
-    
-    <header>
-      <h1>Hi, I'm <br> Willie Loftie-Eaton</h1>
-    </header>
-    <main>
-      <div class="profile_pic">
-        <img src="./pictures/profile_picture.jpg" alt="profile picture">
-      </div>
-
-      <div class="about-me-container">
-        <h2>About Me</h2>
-        <a>
-          I am a third year BSc Computer Science student at the University of Stellenbosch. 
-          I enjoy studying Mathematics, Statistics, and Computer Science. 
-          In my free time I practice guitar and run (training for a marathon).
-          I hope to have an impactful career and tackle problems such as verification of 
-          information authenticity, AI safety and interpretability, and improved education/information access.
-        </a>
-      </div>
-
-      <div class="box-container">
-        <div class="box">
-          <h2>My work</h2>
-          <ul>
-            <li>A program for computing 1-D cellular automata <a target=”_blank” href="https://github.com/willieloftieeaton/calabv1"><u>source</u></a></li>
-            <li>This website. <a target=”_blank” href="https://github.com/willieloftieeaton/willieloftieeaton.github.io"><u>source</u></a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <h2>My CV</h2>
-          <a target=”_blank” href="https://drive.google.com/drive/folders/1FiZiUFAMgWmOqp-cTQgr8VdRrYdyOPxY?usp=sharing"><u>Here</u></a> is a link
-        </div>
-      </div>
-    </main>
-    <footer id="foot">
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="https://github.com/willieloftieeaton">GitHub</a>
-        <a href="https://www.linkedin.com/in/willie-loftie-eaton-2a1666206/">Linkedin</a>
-        <a href="./notice_board.html">Notice Board</a>
-        <button id="toggle-btn2">Light/Dark</button>
+    <header id="header">
+      <!-- https://banner2.cleanpng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg -->
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#about">About</a</li>
+          <li><a class="nav-link" href="#projects">Work</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><button class="nav-link" id="toggle-btn">Light/Dark</button></li>
+        </ul>
       </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>Hi, I'm<br>Willie Loftie-Eaton</h1>
+        <img src="./pictures/profile_picture.jpg" />
+        <h2>About Me</h2>
+        <p>
+          I am a third year BSc Computer Science student at the University of Stellenbosch. I enjoy 
+          studying Mathematics, Statistics, and Computer Science. In my free time I practice guitar 
+          and run (training for a marathon). I hope to have an impactful career and tackle problems 
+          such as verification of information authenticity, AI safety and interpretability, and 
+          improved education/information access.
+        </p>
+        <p>If you want to know more about me, you can visit my <a href="./notice_board.html">Notice Board</a> where I will share things that interest me.</p>
+        <p>My CV can be found <a target=”_blank” href="https://drive.google.com/drive/folders/1FiZiUFAMgWmOqp-cTQgr8VdRrYdyOPxY?usp=sharing">here</a>.</p>
+      </section>
+
+      <section id="projects">
+        <h2>My Work</h1>
+        <h3><a href="https://github.com/willieloftieeaton/CAlab">CAlab</a></h3>
+        <p>The goal of this project is to enable computations and visualizations of Cellular Automata. 
+          It is something I work on in my free time, and at the moment is capible of computing 1-dimensional Cellular Automata.
+        </p>
+        <h3><a href="https://github.com/willieloftieeaton/willieloftieeaton.github.io">This website</a></h3>
+        <p>This website serves to inform you about me, and is a place where I can share my ideas and work with the world.</p>
+      </section>
+    </main>
+
+    <footer>
+      <section id="contact">
+        <h2>Contact me</h2>
+        <div class="social-icons">
+          <div class="social-platform-container">
+            <i class="fab fa-github"></i> 
+            <a
+              href="https://github.com/willieloftieeaton"
+              target="_blank"
+              >GitHub</a>
+          </div>
+          <div class="social-platform-container">
+            <i class="fab fa-twitter"></i> 
+            <a
+              href="https://twitter.com/willie_loftie"
+              target="_blank"
+              >Twitter</a>
+          </div>
+          <div class="social-platform-container">
+            <i class="fab fa-linkedin-in"></i>
+            <a
+              href="https://www.linkedin.com/in/willie-loftie-eaton-2a1666206
+              target="_blank"
+              >Linkedin</a>
+          </div>
+        </div>
+      </section>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

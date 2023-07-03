@@ -1,61 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./style.css">
     <title>Willie L-E</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
   </head>
   <body>
-    
+
     <!-- used to store light/dark mode of website -->
     <script>
       if (localStorage.getItem("dark-mode") === "true") {
         document.body.classList.add("dark-mode");
       }
     </script>
-  
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="https://github.com/willieloftieeaton">GitHub</a>
-      <a href="https://www.linkedin.com/in/willie-loftie-eaton-2a1666206/">Linkedin</a>
-      <a href="./notice_board.html">Notice Board</a>
-      <div class="container">
-        <button id="toggle-btn1">Light/Dark</button>
-      </div>
-    </nav>
-    
-    <header>
-      <h1>Things I want to share with the world</h1>
-    </header>
-    <main>
-      <div class="share_w_wrld">
-        <h2>Concepts:</h2>
+
+    <header id="header">
+      <!-- https://banner2.cleanpng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg -->
+      <nav id="nav-bar">
         <ul>
-          <li>Emergence</li>
-          <li>Cellular Automata</li>
-          <li>Computation</li>
+          <li><a class="nav-link" href="./index.html">Home</a</li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><button class="nav-link" id="toggle-btn">Light/Dark</button></li>
         </ul>
-        <h2>People that inspire me:</h2>
-        <ul>
-          <li>Lex Fridman</li>
-          <li>Cronje Loftie-Eaton (my dad)</li>
-        </ul>
-        <h2>Musicians/bands I enjoy:</h2>
-        <ul>
-          <li>PACKS</li>
-          <li>Princess Chelsea</li>
-          <li>Grimes</li>
-          <li>Alt-J</li>
-        </ul>
-      </div>
-    </main>
-    <footer id="foot">
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="https://github.com/willieloftieeaton">GitHub</a>
-        <a href="https://www.linkedin.com/in/willie-loftie-eaton-2a1666206/">Linkedin</a>
-        <a href="./notice_board.html">Notice Board</a>
-        <button id="toggle-btn2">Light/Dark</button>
       </nav>
+    </header>
+
+    <main>
+      <h1>Things I want to share with the world.</h1>
+      <h2 id="notice-board-heading">Concepts:</h2>
+      <ul>
+        <li>Emergence</li>
+        <li>Cellular Automata</li>
+        <li>Computation</li>
+      </ul>
+      <h2 id="notice-board-heading">People that inspire me:</h2>
+      <ul>
+        <li>Lex Fridman</li>
+        <li>Cronje Loftie-Eaton (my dad)</li>
+      </ul>
+      <h2 id="notice-board-heading">Musicians/bands I enjoy:</h2>
+      <ul>
+        <li>PACKS</li>
+        <li>Princess Chelsea</li>
+        <li>Grimes</li>
+        <li>Alt-J</li>
+      </ul>
+    </main>
+
+    <footer>
+      <section id="contact">
+        <h2>Contact me</h2>
+        <div class="social-icons">
+          <div class="social-platform-container">
+            <i class="fab fa-github"></i> 
+            <a
+              href="https://github.com/willieloftieeaton"
+              target="_blank"
+              >GitHub</a>
+          </div>
+          <div class="social-platform-container">
+            <i class="fab fa-twitter"></i> 
+            <a
+              href="https://twitter.com/willie_loftie"
+              target="_blank"
+              >Twitter</a>
+          </div>
+          <div class="social-platform-container">
+            <i class="fab fa-linkedin-in"></i>
+            <a
+              href="https://www.linkedin.com/in/willie-loftie-eaton-2a1666206
+              target="_blank"
+              >Linkedin</a>
+          </div>
+        </div>
+      </section>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -1,5 +1,5 @@
 // I don't know any JavaScript. ChatGPT wrote this.
-const toggleBtns = document.querySelectorAll("#toggle-btn1, #toggle-btn2");
+const toggleBtns = document.querySelectorAll("#toggle-btn");
 
 toggleBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
