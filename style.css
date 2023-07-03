@@ -135,7 +135,7 @@ footer .social-icons {
   justify-content: space-around;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   header {
     position: absolute;
     top: 0;
@@ -143,11 +143,12 @@ footer .social-icons {
   }
   nav {
     margin-top: 10px;
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 50px;
+    font-size: 2rem;
   }
   nav li {
     padding-bottom: 5px;
@@ -161,6 +162,9 @@ footer .social-icons {
   #about img {
     width: 95%;
     margin: auto;
+  }
+  footer {
+    font-size: 1.9rem;
   }
 }
 
