@@ -157,7 +157,7 @@ footer .social-icons {
     flex-direction: column;
   }
   main {
-    margin-top: 145px;
+    padding-top: 120px;
   }
   #about img {
     width: 95%;
