@@ -1,6 +1,5 @@
 :root {
   --main-white: #f2f2f2;
-  --main-red: red;
   --main-gray: #333;
   --main-dark: #1d1d1d;
 }
@@ -136,6 +135,12 @@ footer .social-icons {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
   header {
     position: absolute;
     top: 0;
@@ -148,7 +153,7 @@ footer .social-icons {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   nav li {
     padding-bottom: 5px;
