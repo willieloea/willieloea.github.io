@@ -55,6 +55,11 @@ ul {
   list-style: none;
 }
 
+div.blog-body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: underline;
   color: var(--main-gray);
