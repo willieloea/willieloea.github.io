@@ -2,6 +2,10 @@
   --main-white: #f2f2f2;
   --main-gray: #333;
   --main-dark: #1d1d1d;
+  --quote-dark-background: #111111;
+  --quote-dark-highlight: #2d2d2d;
+  --quote-light-background: #e2e2e2;
+  --quote-light-highlight: #cccccc;
 }
 
 /***************/
@@ -58,6 +62,17 @@ ul {
 div.blog-body {
   max-width: 600px;
   margin: 0 auto;
+}
+
+p.blog-quote {
+  margin: 10px 0px 10px 10px;
+  padding: 5px;
+  background-color: var(--quote-light-background);
+}
+
+span.blog-highlight {
+  font-style: italic;
+  background-color: var(--quote-light-highlight);
 }
 
 a {
@@ -133,6 +148,14 @@ footer {
   text-align: center;
 }
 
+footer ul {
+  list-style: none;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 footer .social-icons {
   margin-top: 25px;
   display: flex;
@@ -176,6 +199,14 @@ footer .social-icons {
   footer {
     font-size: 1.9rem;
   }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+  }
+  footer li {
+    padding: 0;
+  }
 }
 
 /***************/
@@ -203,4 +234,15 @@ footer .social-icons {
 .dark-mode header * {
   background-color: var(--main-dark);
   color: var(--main-white);
+}
+
+.dark-mode p.blog-quote {
+  margin: 10px 0px 10px 10px;
+  padding: 5px;
+  background-color: var(--quote-dark-background);
+}
+
+.dark-mode span.blog-highlight {
+  font-style: italic;
+  background-color: var(--quote-dark-highlight);
 }

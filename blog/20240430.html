@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WLE Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../pictures/title-icon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+  </head>
+  <body>
+
+    <!-- used to store light/dark mode of website -->
+    <script>
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+      }
+    </script>
+
+    <header id="header">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li><button class="nav-link" id="toggle-btn">Light/Dark</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blog-section">
+        <h2>Cellular Automata and my meaning of life</h2>
+        <div class="blog-body">
+          <p class="blog-date">
+            2024/04/30
+          </p>
+          <p class="blog-par">
+            <br>
+            <h3>What are Cellular Automata?</h3>
+						<p style="text-indent: 25px;">
+							Unfortunately I realised while writing this that it is not easy to expain cellular automata (CA) without images or drawings, and I
+							do not want to add too many of those to this blog, so I will do a rough job of explaining what they are, but there may be gaps.
+						</p>
+						<br>
+						<p style="text-indent: 25px;">
+							I like wikipedia's description of what a cellular automata (ca) may be, and so the followng paragraph is largely copied from there:
+						</p>
+						<p class="blog-quote">
+							A <span class="blog-highlight">cellular automaton</span> consists of a regular <span class="blog-highlight">grid</span> of 
+							<span class="blog-highlight">cells</span>, each in one of a finite number of <span class="blog-highlight">states</span>, 
+							such as on and off. The grid can be in any finite number of dimensions. For each cell, a set of cells called 
+							its <span class="blog-highlight">neighborhood</span> is defined relative to the specified cell. An initial state (time t = 0)
+							is selected by assigning a state for each cell. A new generation is created (advancing t by 1), according to some fixed 
+							<span class="blog-highlight">rule</span> that determines the new state of each cell in terms of the current state of the cell
+							and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same for each cell 
+							and does not change over time, and is applied to the whole grid simultaneously, though there are exceptions.
+						</p>
+            <br>
+						<h3>Life and Cellular Automata</h3>
+						<p>
+							In any given CA, patterns of states in its grid may emerge that have <span class="blog-highlight">robustness</span> - the ability
+							to continue the pattern, when other patterns of states interacts with them. To use an analogy, the human skin is more robust than
+							a piece of cloth since if both were scratched until a small tear apeared, the skin would heal (re-create the pattern that was 
+							there) while the cloth would not.
+						</p>
+						<p style="text-indent: 25px;">
+							new par
+						</p>
+						What do I want to say?
+						I want to say that with rules, patterns of states emerge. The patterns that are most robust will evolve.
+						Patterns make us, we want to make patterns.
+
+						Life as a CA glider and why programming changes matter:
+							I think of life as emergent patterns of self-replicating or -regulating states
+						of matter in reality, where matter is the smallest element in reality which can
+						have a state. An example that seems to make this definition clear for me and 
+						many othes would be the life in the reality of Conway's game of life (gol).
+							In gol, life emerges in the form of still lifes, oscilators, and spaceships 
+						[1]. These patterns can vary greatly in complexity and robustness (the ability
+						to withstand interaction [2] with other patterns of life in reality). As I said 
+						earlier it is clear to many that some of the patterns of states in gol seem to
+						exhibit properties of self-replication or self-regulation and look like they
+						exhibit life, hence the name: Game of Life.
+							The same is true in our reality. Certain patterns of states in reality occur
+						in clumps of reality. Patterns that self-replicate are more likely to exist for
+						longer, and so too with patterns that are good at self-regulation i.e. 
+						robustness. Evolution by natural selection is the process of patterns 
+						interacting with each other and one of the following happens: all interacting
+						patterns cease to replicate; some patterns continue to replicate while others
+						don't; a new living pattern emerges.
+							Given enough time and space, highly robust patterns might emerge, and they
+						may consist of (or be a part of) living patterns that form a hyper-pattern. This
+						is what we are: a massive number and complicated series of patterns that emerged
+						to make an extremely robust hyper-pattern, the human.
+							I'm a computer scientist who has not studied any of the hard sciences 
+						formally, so there will likely be gaps in the following summary, but here are
+						a few layers of pattern formation on the path to a human pattern:
+							quark, atom, molecule, dna, cell, tissue, organ, organism (human). [3]
+						
+						I'll continue later.
+						
+						
+						[1] The wikipedia definitions for these patterns are: 
+									still lifes, which do not change from one generation to the next; 
+									oscillators, which return to their initial state after a finite number of 
+										generations; and 
+									spaceships, which translate themselves across the grid
+						[2] Patterns interact when the cells that form them change their state in the
+									next time step, based on the state of cell(s) in the other pattern.
+						[3] This is a bit of a digression but an interesting thing to note is that these
+									patterns did not emerge/arrive in this order. The organism that later 
+									became a human came before certain tissues or organs that are now part
+									of the human pattern.
+            <br>
+            <br>
+            <h3>What is the meaning of life?</h3>
+            <p>
+							For me, my purpose is to create the maximally robust and happy pattern.
+						</p>
+            <br>
+          </p>
+          <p><br><br><a href="../blog.html">Back to archive</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="contact">
+        <h2>Contact me</h2>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <div class="social-platform-container">
+                <i class="fa fa-envelope"></i>
+                <a
+                  href="mailto:willieloea@gmail.com"
+                  target="_blank"
+                  >willieloea@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="social-platform-container">
+                <i class="fa-brands fa-github"></i>
+                <a
+                  href="https://github.com/willieloea"
+                  target="_blank"
+                  >GitHub</a>
+              </div>
+            </li>
+            <li>
+              <div class="social-platform-container">
+                <i class="fa-brands fa-x-twitter"></i>
+                <a
+                  href="https://x.com/willieloea"
+                  target="_blank"
+                  >X</a>
+              </div>
+            </li>
+            <li>
+              <div class="social-platform-container">
+                <i class="fa-brands fa-linkedin"></i>
+                <a
+                  href="https://www.linkedin.com/in/willieloea"
+                  target="_blank"
+                  >Linkedin</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
