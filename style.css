@@ -182,6 +182,7 @@ footer .social-icons {
     align-items: center;
     text-align: center;
     font-size: 1.9rem;
+    max-width: 100%;
   }
   nav li {
     padding-bottom: 5px;
