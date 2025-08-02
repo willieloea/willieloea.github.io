@@ -2,3 +2,8 @@
 title: willie loftie-eaton's blog
 description: my little sovereign corner of the internet
 theme: jekyll-theme-minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-theme-minima
