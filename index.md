@@ -19,7 +19,7 @@ To know more about me, you can visit my [blog](willieloea.github.io/blog)
 where I will share things that interest me.  
 My CV can be found [here](https://drive.google.com/drive/folders/1osDFVEo7hA5AT-f72qt0CtxR-abmIgxA?usp=sharing).
 
---- 
+*** 
 
 ## My Work
 [Demo E-commerece app](https://github.com/willieloea/ecommapp)  
