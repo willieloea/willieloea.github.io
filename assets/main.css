@@ -1,0 +1,12 @@
+---
+# This front matter is required for Jekyll to process the file.
+---
+
+// Import the Minima theme's styles.
+@import "minima";
+
+// Your custom styles go here.
+// For example:
+body {
+  font-family: sans-serif;
+}
