@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+layout: custom-home
 ---
 
 <h1>Hi, I'm Willie Loftie-Eaton</h1>
@@ -18,7 +18,7 @@ skills, and learn about cool problems to tackle (energy abundance seems
 interesting). I'm interested in making civilization last as long as possible.
 I'm always looking for friends, so feel free to reach out if you want to chat.
 
-To know more about me, you can visit my [blog](./blog.html)
+To know more about me, you can visit my [blog](./blog)
 where I will share things that interest me.  
 My CV can be found [here](https://drive.google.com/drive/folders/1osDFVEo7hA5AT-f72qt0CtxR-abmIgxA?usp=sharing).
 

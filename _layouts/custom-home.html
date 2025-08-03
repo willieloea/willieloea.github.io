@@ -1,0 +1,22 @@
+{% raw %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/pictures/title-icon.ico' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <h1>{{ site.title | default: "My Site" }}</h1>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>{{ site.time | date: '%Y' }} Willie Loftie-Eaton</p>
+    </footer>
+  </body>
+</html>
+{% endraw %}
