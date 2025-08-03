@@ -5,7 +5,8 @@
 layout: home
 ---
 
-# Hi, I'm Willie Loftie-Eaton
+<h1>Hi, I'm Willie Loftie-Eaton</h1>
+
 ![profile picture](./pictures/profile_picture.jpg)
 
 ## About Me

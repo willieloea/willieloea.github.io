@@ -22,8 +22,8 @@ title: Willie Loftie-Eaton
 email: willieloea@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   my little corner of the internet
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "willieloea.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://willieloea.github.io"
 twitter_username: willieloea
 github_username:  willieloea
 
