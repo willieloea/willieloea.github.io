@@ -7,8 +7,18 @@ url: "https://willieloea.github.io"
 twitter_username: willieloea
 github_username:  willieloea
 
+# Main navigation
+header_pages:
+  - about.md
+  - blog.md
+  - cv.md
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 permalink: /blog/:title
+
+# Files and directories to exclude
+exclude:
+  - cv_generator

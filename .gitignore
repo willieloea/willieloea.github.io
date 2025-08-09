@@ -1,5 +1,9 @@
+# Jekyll related files
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Personal files
+**/*.tmp.*

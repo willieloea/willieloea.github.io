@@ -20,7 +20,7 @@ I'm always looking for friends, so feel free to reach out if you want to chat.
 
 To know more about me, you can visit my [blog](./blog)
 where I will share things that interest me.  
-My CV can be found [here](https://drive.google.com/drive/folders/1osDFVEo7hA5AT-f72qt0CtxR-abmIgxA?usp=sharing).
+You can view my CV on [this page](./cv) or download a PDF version [here](/assets/cv/Willie_Loftie-Eaton_CV.pdf).
 
 *** 
 
