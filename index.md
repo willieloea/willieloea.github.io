@@ -7,7 +7,7 @@ layout: custom-home
 
 <h1>Hi, I'm Willie Loftie-Eaton</h1>
 
-![profile picture](./pictures/profile_picture.jpg)
+![profile image](./assets/images/profile_image.jpg)
 
 ## About Me
 I am a BSc Hons Computer Science student at the University of Stellenbosch. I

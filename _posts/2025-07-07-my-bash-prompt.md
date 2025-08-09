@@ -4,6 +4,13 @@ title:  "My bash prompt"
 ---
 
 # Background
+this page is more a resource for me to have a place i can come back to if i
+wanted to customize my bash prompt.
+
+the knowledge section is a reference for the things i've learnt about
+customizing the bash prompt, and the my prompt section describes my prompt.
+
+# Knowledge
 The basic structure of an ANSI escape code is:  
 `\e[<Attribute>;<ForegroundColor>;<BackgroundColor>m`  
 or  
@@ -42,6 +49,19 @@ or
 | Reset            | `0`                   | `0`                   |
 | Default          | `39`                  | `49`                  |
 
+`\u`: The username of the current user.  
+`\h`: The hostname of the system, up to the first dot.  
+`\H`: The full hostname.  
+`\w`: The current working directory, with the home directory abbreviated to ~.  
+`\W`: The basename of the current working directory.  
+`\$`: The prompt symbol ($ for a regular user, # for the root user).  
+`\d`: The current date.  
+`\t`: The current time in 24-hour HH:MM:SS format.  
+`\A`: The current time in 24-hour HH:MM format.  
+`\e`: An escape character, used in conjunction with ANSI escape sequences for terminal control (e.g., color changes).  
+`\[` and `\]`: Markers for non-printable characters (like color codes) to ensure proper cursor positioning by readline.  
+`\!`: The history number of the current command.  
+`\v`: The version of Bash.
 
 # My prompt
 ```bash
