@@ -11,7 +11,7 @@ cv:
       username: willieloea
   sections:
     about:
-      - I am a final year BScHons Computer Science student.
+      - I am a final year BScHons Computer Science student. I enjoy working with hard working people on a mission that is good for the world. I'm eager to learn and to provide value where it is needed.
     education:
       - institution: Stellenbosch University
         area: Computer Science (General Stream)
@@ -38,7 +38,13 @@ cv:
         start_date: 2024-06
         end_date: 2024-07
         location: Stellenbosch, WC, RSA
-        summary: Wrote e2e tests for a React Native application using Jest.
+        summary: Wrote e2e tests for a React Native application using Jest. [Company website](https://www.kinglyclark.com/)
+        highlights:
+      - company: Pieriwiet Property Valuations
+        position: Website consulting
+        date: 2023-07
+        location: Windhoek, Khomas, NAM
+        summary: Wrote a simple website for a property valuation company. [Website](https://willieloea.github.io/ppv/)
         highlights:
     projects:
       - name: cilpy
@@ -51,7 +57,7 @@ cv:
           - Will be opensourced by the end of the year.
     skills:
       - label: Programming
-        details: Proficient with Python, C, Java and Git
+        details: Proficient with Python, C, Java, HTML and CSS. I'm familiar with React, and x86 Assembly.
       - label: Mathematics
         details: Good understanding of calculus and linear algebra, and an elementary understanding of statistics.
       - label: Languages
