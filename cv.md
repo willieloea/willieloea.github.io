@@ -50,7 +50,7 @@ I am a final year BScHons Computer Science student.
 - Languages: English (fluent), Afrikaans (native)
 # Publications
 
-## Particle Swarm Optimization for Large Scale Optimization Problems ([https://github.com/willieloea/ci_research/blob/main/pso_for_lsop.pdf](github.com/willieloea/ci_research/blob/main/pso_for_lsop.pdf))
+## Particle Swarm Optimization for Large Scale Optimization Problems ([pso_for_lsop.pdf](https://github.com/willieloea/ci_research/blob/main/pso_for_lsop.pdf))
 - Apr 2025
 - ***Willie Loftie-Eaton***
 
