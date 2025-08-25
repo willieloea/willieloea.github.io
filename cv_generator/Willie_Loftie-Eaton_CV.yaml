@@ -9,9 +9,16 @@ cv:
       username: willieloea
     - network: GitHub
       username: willieloea
+    - network: X
+      username: willieloea
   sections:
     about:
-      - I am a final year BScHons Computer Science student. I enjoy working with hard working people on a mission that is good for the world. I'm eager to learn and to provide value where it is needed.
+      - Computer Science graduate from Stellenbosch Univeristy. In my undergraduate
+        studies, I gained experience with a variety of programming languages (Java, C,
+        Python, HTML & CSS, React.js and some x86 assembly). In my honours year, I'm
+        focusing more on data science, studying machine learning and computational
+        intelligence (particle swarm optimization and evolutionary computation).
+        I'm eager to work hard and solve problems.
     education:
       - institution: Stellenbosch University
         area: Computer Science (General Stream)
@@ -22,6 +29,7 @@ cv:
         location: Stellenbosch, WC, RSA
         summary: Average of 60%
         highlights:
+          - Had modules covering computer science (DSA, ML, Web development, Concurrency, AI), mathematics (calculus, linear algebra, abstract mathematics), applied mathematics (graph theory, cryptography), operations research (queuing systems), and statistics.
       - institution: Curro Windhoek Gymnasium
         area: High School
         degree: Matric
@@ -38,13 +46,7 @@ cv:
         start_date: 2024-06
         end_date: 2024-07
         location: Stellenbosch, WC, RSA
-        summary: Wrote e2e tests for a React Native application using Jest. [Company website](https://www.kinglyclark.com/)
-        highlights:
-      - company: Pieriwiet Property Valuations
-        position: Website consulting
-        date: 2023-07
-        location: Windhoek, Khomas, NAM
-        summary: Wrote a simple website for a property valuation company. [Website](https://willieloea.github.io/ppv/)
+        summary: Wrote e2e tests for a React Native application using Jest.
         highlights:
     projects:
       - name: cilpy
@@ -57,7 +59,7 @@ cv:
           - Will be opensourced by the end of the year.
     skills:
       - label: Programming
-        details: Proficient with Python, C, Java, HTML and CSS. I'm familiar with React, and x86 Assembly.
+        details: Proficient in Python, C, and Java
       - label: Mathematics
         details: Good understanding of calculus and linear algebra, and an elementary understanding of statistics.
       - label: Languages
@@ -71,7 +73,7 @@ cv:
         journal:
         date: 2025-04
     extracurricular_activities:
-      - bullet: Started and lead the [SU Computer Club](https://su-computer-club.github.io/)
+      - bullet: Started and lead the [SU Developer Society](https://su-developer-society.github.io/)
       - bullet: Organised a cross country running competition in my second year at university.
 design:
   theme: classic
