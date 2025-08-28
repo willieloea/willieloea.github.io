@@ -29,7 +29,12 @@ cv:
         location: Stellenbosch, WC, RSA
         summary: Average of 60%
         highlights:
-          - Had modules covering computer science (DSA, ML, Web development, Concurrency, AI), mathematics (calculus, linear algebra, abstract mathematics), applied mathematics (graph theory, cryptography), operations research (queuing systems), and statistics.
+          - Had modules covering computer science (DSA, Computer architecture,
+            Web development, Introductory databases, Networks, Concurrency,
+            Software engineering, AI, ML, Automata theory), mathematics (calculus,
+            linear algebra, abstract mathematics), applied mathematics (graph
+            theory, cryptography), operations research (queuing systems), and
+            statistics.
       - institution: Curro Windhoek Gymnasium
         area: High School
         degree: Matric
@@ -46,7 +51,8 @@ cv:
         start_date: 2024-06
         end_date: 2024-07
         location: Stellenbosch, WC, RSA
-        summary: Wrote e2e tests for a React Native application using Jest.
+        summary: Wrote e2e tests for a React Native application using Jest. I
+          also worked with Docker during this internship.
         highlights:
     projects:
       - name: cilpy
