@@ -15,10 +15,11 @@ cv:
     about:
       - Computer Science graduate from Stellenbosch Univeristy. In my undergraduate
         studies, I gained experience with a variety of programming languages (Java, C,
-        Python, HTML & CSS, React.js and some x86 assembly). In my honours year, I'm
-        focusing more on data science, studying machine learning and computational
-        intelligence (particle swarm optimization and evolutionary computation).
-        I'm eager to work hard and solve problems.
+        Python, HTML & CSS, React.js and some x86 assembly). This year, I'm doing
+        my honours in computer science, focusing more on data science, studying
+        machine learning and computational intelligence (particle swarm
+        optimization and evolutionary computation). I want to have a productive
+        career, and I'm eager to work hard and learn a lot in 2026.
     education:
       - institution: Stellenbosch University
         area: Computer Science (General Stream)
@@ -65,22 +66,27 @@ cv:
           - Will be opensourced by the end of the year.
     skills:
       - label: Programming
-        details: Proficient in Python, C, and Java
+        details: Proficient in Python, C, and Java. Familiar with HTML, CSS, and React.js.
       - label: Mathematics
         details: Good understanding of calculus and linear algebra, and an elementary understanding of statistics.
       - label: Languages
         details: 'English (fluent), Afrikaans (native)'
-    publications:
+    research:
       - title: Particle Swarm Optimization for Large Scale Optimization Problems
         authors:
-          - '***Willie Loftie-Eaton***'
+          - 'Authors: *Willie Loftie-Eaton*'
         doi: 
         url: https://github.com/willieloea/ci_research/blob/main/pso_for_lsop.pdf
         journal:
         date: 2025-04
+      - title: 'Programming Patterns: Continuations and monads'
+        authors:
+          - 'Authors: *Liam Abbott, Willie Loftie-Eaton*'
+        url: https://github.com/willieloea/research/blob/main/monads_in_c.pdf
+        journal:
+        date: 2025-05
     extracurricular_activities:
-      - bullet: Started and lead the [SU Developer Society](https://su-developer-society.github.io/)
-      - bullet: Organised a cross country running competition in my second year at university.
+      - bullet: Started and lead the [SU Developer Society](https://su-developer-society.github.io/) and organised a cross country running competition in 2022.
 design:
   theme: classic
   page:
