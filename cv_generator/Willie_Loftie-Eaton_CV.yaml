@@ -15,11 +15,11 @@ cv:
     about:
       - Computer Science graduate from Stellenbosch Univeristy. In my undergraduate
         studies, I gained experience with a variety of programming languages (Java, C,
-        Python, HTML & CSS, React.js and some x86 assembly). This year, I'm doing
-        my honours in computer science, focusing more on data science, studying
-        machine learning and computational intelligence (particle swarm
-        optimization and evolutionary computation). I want to have a productive
-        career, and I'm eager to work hard and learn a lot in 2026.
+        Python, SQL, HTML & CSS, React.js and some x86 assembly). This year, I'm
+        doing my honours in computer science, focusing more on data science, studying
+        machine learning and computational intelligence (particle swarm optimization
+        and evolutionary computation). I want to have a productive career, and I'm
+        eager to work hard and learn a lot in 2026.
     education:
       - institution: Stellenbosch University
         area: Computer Science (General Stream)
@@ -66,7 +66,7 @@ cv:
           - Will be opensourced by the end of the year.
     skills:
       - label: Programming
-        details: Proficient in Python, C, and Java. Familiar with HTML, CSS, and React.js.
+        details: Proficient in Python, C, and Java. Familiar with Docker, Git, SQL, HTML, CSS, and React.js.
       - label: Mathematics
         details: Good understanding of calculus and linear algebra, and an elementary understanding of statistics.
       - label: Languages
@@ -96,7 +96,7 @@ design:
     left_margin: 2cm
     right_margin: 2cm
     show_page_numbering: true
-    show_last_updated_date: true
+    show_last_updated_date: false
   colors:
     text: rgb(0, 0, 0)
     name: rgb(0, 0, 0)
