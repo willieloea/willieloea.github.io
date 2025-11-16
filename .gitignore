@@ -7,3 +7,7 @@ vendor
 
 # Personal files
 **/*.tmp.*
+
+**/*.log
+**/*.aux
+**/*.out
