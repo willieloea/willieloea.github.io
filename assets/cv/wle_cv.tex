@@ -1,18 +1,33 @@
 \documentclass{wle_cv}
+\usepackage{tikz}
+\usepackage{array}
 
 \begin{document}
 
 \maketitle{Willie Loftie-Eaton}
 
 \begin{cvsection}{About}
-  I am a Computer Science graduate from Stellenbosch University. In my
-  undergraduate studies, I gained experience with a variety of programming
-  languages (x86 assembly, C, Java, Python, SQL, HTML \& CSS, and React.js).
-  In 2025, I pursued an honours in computer science, focusing more on machine
-  learning and computational intelligence (particle swarm optimization and
-  evolutionary computation). I want to have a productive career and I'm eager to
-  work hard and learn a lot in 2026, either as a software engineer or machine
-  learning engineer.
+  \noindent
+  \begin{tabular*}{\textwidth}{@{} m{0.75\textwidth} @{\extracolsep{\fill}} m{0.2\textwidth} @{}}
+    % Column 1: Your text
+    I am a Computer Science graduate from Stellenbosch University. In my
+    undergraduate studies, I gained experience with a variety of programming
+    languages (including x86 assembly, C, Java, Python, SQL, HTML \& CSS, and
+    React.js). In 2025, I pursued an honours in computer science, focusing more on
+    machine learning and computational intelligence (particle swarm optimization
+    and evolutionary computation). I want to have a productive career and I'm
+    eager to work hard and learn a lot in 2026, either as a software engineer or
+    machine learning engineer. If you would like to talk about employment or an
+    internship, please reach out.
+    &
+    \centering
+    \begin{tikzpicture}
+      \clip[rounded corners=15pt] (0,0) rectangle (\linewidth, \linewidth);
+      \node[anchor=south west, inner sep=0] at (0,0) {
+        \includegraphics[width=\linewidth]{square_profile.jpg}
+      };
+    \end{tikzpicture}
+  \end{tabular*}
 \end{cvsection}
 
 \begin{cvsection}{Education}
@@ -87,12 +102,15 @@
 
 \begin{cvsection}{Skills}
   \noindent\textbf{Programming}: Proficient in Python, C, and Java. Familiar
-  with Linux, Docker, Git, SQL, HTML, CSS, and React.js.
+  with SQL, HTML, CSS, and React.js.
 
   \noindent\textbf{Mathematics}: Good understanding of calculus and linear
   algebra, and an elementary understanding of statistics.
 
   \noindent\textbf{Languages}: English (native), Afrikaans (native).
+
+  \noindent\textbf{Tools}: I know how to use Docker and Git, and like using
+  Linux and \LaTeX.
 \end{cvsection}
 
 \begin{cvsection}{Extracurricular Activities}

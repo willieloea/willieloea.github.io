@@ -56,7 +56,7 @@
 % =============================
 \newenvironment{cvsection}[1]{
   \section*{#1}
-  \vspace{-0.5em}
+  \vspace{-0.75em}
   \begin{adjustwidth}{1em}{0pt}
 }{
   \end{adjustwidth}
