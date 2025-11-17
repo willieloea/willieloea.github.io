@@ -25,15 +25,15 @@ My resume lives [here](/assets/cv/wle_cv.pdf) as a PDF.
 *** 
 
 ## My Work
-[`cilpy`](https://github.com/willieloftieeaton/cilpy)  
+[`cilpy`](https://github.com/willieloea/cilpy)  
 A computational intelligence library for Python. This library allows researchers
 to study nature inspired algorithms on dynamic, constrained, and multi-objective
 optimization problems.
 
-[CAlab](https://github.com/willieloftieeaton/CAlab)  
+[CAlab](https://github.com/willieloea/CAlab)  
 The goal of this project is to enable computations and visualizations of
 Cellular Automata. It is something I work on in my free time, and at the moment
 is capable of computing 1-dimensional Cellular Automata.
 
-[This website](https://github.com/willieloftieeaton/willieloftieeaton.github.io)  
+[This website](https://github.com/willieloea/willieoea.github.io)  
 This website serves to inform you about me, and is a place where I can share my ideas and work with the world.
