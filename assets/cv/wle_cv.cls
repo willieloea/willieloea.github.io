@@ -11,7 +11,8 @@
 \RequirePackage[hidelinks]{hyperref}  % for hyperlinks
 \RequirePackage{indentfirst}          % for indenting first paragraph
 \RequirePackage[bb=boondox]{mathalfa} % for x.com logo
-
+\RequirePackage{lastpage}             % for page number
+\RequirePackage{fancyhdr}             % for page number
 
 % ======================
 % === Document Setup ===
@@ -21,6 +22,11 @@
 
 % Set fonts
 \setmainfont{Nunito}
+
+% Set footer to have page number
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 
 % =========================
 % === Personal Commands ===
@@ -55,6 +61,7 @@
 % === Personal Environments ===
 % =============================
 \newenvironment{cvsection}[1]{
+  \vspace{-0.75em}
   \section*{#1}
   \vspace{-0.75em}
   \begin{adjustwidth}{1em}{0pt}
