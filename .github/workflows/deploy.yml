@@ -1,0 +1,43 @@
+name: Deploy site to GitHub Pages
+
+# when the workflow will run
+on:
+  push:
+    branches: ["master"]
+
+# permissions of the GITHUB_TOKEN to allow deployment on GH Pages
+# (I need to study this further)
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# setting only one deployment at a time
+# (I need to study this further)
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# job that builds and deploys the site
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: setup GH Pages
+        uses: actions/configure-pages@v5
+
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.' # change if entrypoint path changes.
+
+      - name: deploy on GH Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
