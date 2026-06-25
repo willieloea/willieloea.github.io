@@ -1,11 +1,12 @@
 // I'm copying this over from https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
-// I don't understand everything in this file.
 
-class Header extends HTMLElement {
+class WleHeader extends HTMLElement {
+  /* runs as soon as the component is created in memory */
   constructor () {
-    super();
+    super(); // call the constructor of the parent class (HTMLElement)
   }
 
+  /* runs if the tag is successfully inserted in the DOM */
   connectedCallback() {
     this.innerHTML = `
       <style>
@@ -36,20 +37,27 @@ class Header extends HTMLElement {
       <header>
         <nav>
           <ul>
-            <!--
-            the '/' tells the browser: "ignore the directory this file is in,
-            go to the root of the domain and look for the file there.
-            -->
+            <!-- the '/' tells the browser: "ignore the directory this file is in, go to the root of the domain and look for the file there." -->
             <li><a href="/index.html">Home</a></li>
             <li><a href="/blog.html">Blog</a></li>
             <li><a href="/learnings.html">Learnings</a></li>
             <li><a href="/bookshelf.html">Bookshelf</a></li>
           </ul>
+          <button class="theme-toggle" id="themeBtn">L/D</button>
         </nav>
       </header>
     `;
+
+    // Find the button inside the component
+    const btn = this.querySelector('#themeBtn');
+
+    // Listen for clicks and toggle a global class on the body tag
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
   }
 }
 
-customElements.define('header-component', Header);
+// register new component in browser registry, linking 'wle-header' with WleHeader.
+customElements.define('wle-header', WleHeader);
 
