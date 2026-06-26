@@ -27,7 +27,7 @@ class WleHeader extends HTMLElement {
           float: left;
         }
 
-        ul li a {
+        ul li * {
           display: block;
           text-align: center;
           padding: 14px 16px;
@@ -39,11 +39,11 @@ class WleHeader extends HTMLElement {
           <ul>
             <!-- the '/' tells the browser: "ignore the directory this file is in, go to the root of the domain and look for the file there." -->
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/blog/index.html">Blog</a></li>
             <li><a href="/learnings.html">Learnings</a></li>
             <li><a href="/bookshelf.html">Bookshelf</a></li>
+            <li><button class="theme-toggle" id="themeBtn">L/D</button></li>
           </ul>
-          <button class="theme-toggle" id="themeBtn">L/D</button>
         </nav>
       </header>
     `;
