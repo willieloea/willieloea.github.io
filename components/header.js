@@ -41,7 +41,7 @@ class WleHeader extends HTMLElement {
             <li><a href="/index.html">Home</a></li>
             <li><a href="/blog/index.html">Blog</a></li>
             <li><a href="/learnings.html">Learnings</a></li>
-            <li><a href="/bookshelf.html">Bookshelf</a></li>
+            <li><a href="/bookshelf/index.html">Bookshelf</a></li>
             <li><button class="theme-toggle" id="themeBtn">L/D</button></li>
           </ul>
         </nav>
