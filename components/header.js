@@ -53,11 +53,10 @@ class WleHeader extends HTMLElement {
 
     // Listen for clicks and toggle a global class on the body tag
     btn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('light-theme');
     });
   }
 }
 
 // register new component in browser registry, linking 'wle-header' with WleHeader.
 customElements.define('wle-header', WleHeader);
-
