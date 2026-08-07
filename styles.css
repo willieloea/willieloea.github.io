@@ -8,7 +8,7 @@ main {
     margin-inline: auto;  /* Center the column itself on the screen */
 }
 
-main * {
+main p, ul, blockquote, h1 {
     line-height: 1.6;
     margin-bottom: 1.5rem; /* adds space between paragraphs */
 }

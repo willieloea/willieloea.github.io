@@ -11,9 +11,9 @@ class WleHeader extends HTMLElement {
     this.innerHTML = `
       <style>
         nav { display: flex; align-items: center; justify-content: center; }
-        ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
-        ul li { float: left; }
-        ul li * { display: block; text-align: center; padding: 14px 16px; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+        nav ul li { float: left; }
+        nav ul li * { display: block; text-align: center; padding: 14px 16px; }
       </style>
 
       <header>
