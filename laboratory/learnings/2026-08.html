@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WLE Learnings</title>
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <wle-header></wle-header>
+  <main>
+  <h1>Learning/Building Log: August 2026</h1>
+  <p>
+    The goal of this page is to summarise what I've learnt this month, to force
+    myself to know whether or not I've made progress.
+    <br>
+    On 1 August I returned to Stellenbosch University to study full time. My
+    goals for this month were:
+  </p>
+  <ul>
+    <li><a href="#church-turing-thesis">Understand the Church-Turing Thesis</a></li>
+    <li><a href="#linux">Learn more about Linux</a></li>
+    <li><a href="#python">Learn more about Python</a></li>
+    <li><a href="#machine-learning">Study Machine Learning</a></li>
+  </ul>
+  <p>
+  My motivation and focus waned near the end of the month, and I did not make as
+  much progress as I wanted to.
+  </p>
+  <h2 id="church-turing-thesis">Understand the Church-Turing Thesis</h2>
+  <p>The Church-Turing thesis emerged from Turing's 1936 paper "On Computable
+  Numbers, with an Application to the Entscheidungsproblem". In order to
+  understand it, I started reading "The Annotated Turing" by Charles Petzold.
+  From this I learnt that in the early 20th century, mathematicians (Hilbert and
+  Russel were important figures) wanted to axioms for all of mathematics that
+  were:</p>
+  <ol>
+    <li><b>Independent</b> - You should not be able to derive one axiom from
+          others</li>
+    <li><b>Consistent</b> - Contradictory statements should not both be
+          provable.</li>
+    <li><b>Complete</b> - All true statements in this formal system can be
+          proven</li>
+    <ul>
+      <li>Interestingly, in his PhD thesis, Kurt Gödel proved that first order
+          logic is complete. His later famous incompleteness theorems showed
+          that any formal system powerful enough to do arithmetic could not have
+          both consistency and completeness.</li>
+    </ul>
+    <li><b>Decidable</b> - For any statement, we must be able to know wether it
+        is provable or not.</li>
+  </ol>
+  <p>So what was the Church-Turing thesis about? It was about that last point -
+  whether mathematics can be decidable. Wheter you can define an algorithm
+  which, for any statement, you can say "yes this is provable" or "this is not
+  provable". This is what is meant by "Entscheidungsproblem", which is German
+  for decision (<i>Entscheidung</i>) problem (<i>problem</i>). The Church-Turing
+  thesis is called such because Alonzo Church also proved, just before Turing
+  did, that the system of axioms used in all of mathematics is not decidable.
+  Because Turing's proof was independently derived, original, and maybe more
+  intuitive, both were given credit solving the Entscheidungsproblem</p>
+  <p>I hope that in September I'll describe what Turing machines are and how his
+  proof worked.</p>
+
+  <h2 id="linux">Linux</h2>
+  <p>
+  This was less about Linux and it's internals, and more about Linux-related
+  tools. On the 15th, I switched from Fedora Linux to
+  <a href="https://omarchy.org/">Omarchy</a> on my laptop. In the time that
+  followed, I got used to using <kbd><a href="https://tmux.app/">tmux</a></kbd>,
+  <a href="https://hypr.land/">hyprland</a>, and POSIX redirection.
+  <a href="https://quarto.org/">Quarto</a> was a dead end.
+  </p>
+  <p>In September I want to stop fiddling with my system and developer
+  ergonomics - just get to pure reading and coding.</p>
+
+  <h2 id="python">Python</h2>
+  <p>Although I've worked with Python in the past, there is a lot about the
+  language and its ecosystem that I do not understand. For this task, there was
+  not something specific that I wanted to master by the end of the month, but I
+  have learnt the following:
+  </p>
+  <ul>
+    <li>
+      <a href="https://www.youtube.com/watch?v=-Zuq6UrEXKE">This video</a> on
+      <b>package management</b> was very good. I'm learning how to use
+      <a href="https://docs.astral.sh/uv/guides/integration/jupyter/#using-jupyter-within-a-project">uv for jupyter notebooks</a>.
+    </li>
+    <li>
+      The
+      <a href="https://docs.python.org/3/tutorial/index.html">Python tutorial</a>
+      is useful to become more familiar with the language. I'm at section 4.9.
+    </li>
+  </ul>
+
+  <h2 id="machine-learning">Machine Learning</h2>
+  <p>These notes are still super rough. The following topics were covered:</p>
+  <ul>
+    <li><a href="#introduction-to-machine-learning">Introduction Machine Learning</a></li>
+    <li><a href="#data-to-insights-to-decisions">Data to Insights to Decisions</a></li>
+    <li><a href="#data-exploration">Data Exploration</a></li>
+    <li><a href="#similarity-based-learning">Similarity based learning</a></li>
+  </ul>
+<h3 id="introduction-to-machine-learning">Introduction to Machine
+Learning</h1>
+<p>These notes are based on a university course, and draws from</p>
+<ul>
+<li>chapter 1 of ‘Fundamentals of Machine Learning for Predictive Data
+Analytics’ by Aoife D’Arcy et al.,<br />
+</li>
+<li>course slides, and<br />
+</li>
+<li>the internet.</li>
+</ul>
+<p>A variety of introductory concepts were covered, including:</p>
+<ul>
+<li>What is ML? Algorithms + Data (programming 2.0)<br />
+</li>
+<li>ML Pipeline: Data gathering, data preparation (feature engineering),
+model training, model deployment<br />
+</li>
+<li>Descriptive features vs target features<br />
+</li>
+<li>Confounding features<br />
+</li>
+<li>Training vs Validation vs Test set<br />
+</li>
+<li>ML Paradigms: Supervised vs Unsupervised vs Reinforcement
+learning<br />
+</li>
+<li>Underfitting vs Overfitting<br />
+</li>
+<li>Bias-variance trade-off in models<br />
+</li>
+<li>Inductive bias, restriction bias, and preference bias in
+models<br />
+</li>
+<li>Ill-posed problems<br />
+</li>
+<li><span class="math inline"><em>k</em></span>-fold cross
+validation<br />
+</li>
+<li>Data missing completely at random vs at random vs not at
+random<br />
+</li>
+<li>Data quality issues:
+<ul>
+<li>Data leakage: Test-train contamination + Target leakage<br />
+</li>
+<li>Concept drift<br />
+</li>
+<li>Sampling bias</li>
+</ul></li>
+</ul>
+<p>One thing that Andries Engelbrecht emphasised is that not every
+problem requires the most sophisticated or computationally expensive
+model - some problems are best solved with simple solutions.</p>
+<p>What is machine learning?<br />
+Machine learning is the use of algorithms that can learn or change their
+behaviour based on data that is provided to them. The end result of
+providing an algorithm with data is that it has developed a ‘model’ - a
+representation of the data that it was exposed to.</p>
+<p>What is involved in each stage of the ML pipeline?<br />
+The ML pipeline is the process followed to build and deploy a model.
+First, data has to be gathered - this could involve scraping, querying
+databases, or deploying sensors in the real world to collect
+information. Then data preparation involves going through the collected
+data to identify data quality issues, addressing those issues, and
+building new features out of the data you have (i.e. feature
+engineering) - this is a discipline in itself and will be covered as a
+later topic. After this, an algorithm has to be selected, and a model
+trained - again a whole discipline and will be covered in later topics.
+Finally, the model has to be deployed in the real world - built into an
+app or integrated into an API.</p>
+<p>What are descriptive and target features?<br />
+Features are pieces of data, e.g. the height of a person, temperature at
+a time of day, etc. Descriptive features are features that will be used
+when a model is deployed to make a prediction.</p>
+<p>What are confounding features?<br />
+Confounding features are features that are not not relevant to what the
+model is trying to predict. Holding on to this data will just slow you
+down.</p>
+<p>What are training, validation, and test sets?<br />
+When building a model (‘model training’ step of the ML pipeline), the
+dataset (constructed during ‘data preparation’) is split into three
+disjoint sets, namely training, validation, and test set, to train,
+validate, and test a model. During training, data fed to the algorithm
+is used to mold and shape the model - it’s the process of narrowing down
+the space of all possible models to just one. A handful of different
+models (that use different algorithms) can be trained. In the validation
+step, the performance of each trained model is assessed to see how they
+perform on data that was not in the training set. The results of this
+assessment can be used to filter out models that don’t generalize beyond
+the training set. After this, testing is where a model is assessed again
+to ensure it didn’t just perform well on the training and validation
+sets, and to get a sense of how well it will perform in deployment.</p>
+<p>What is supervised, unsupervised, and reinforcement learning?<br />
+Supervised learning is when instances have descriptive feature values
+and target feature values or ‘labels’. The goal is to develop a model
+that correctly maps descriptive feature values to target feature values.
+E.g. medical diagnosis based on a common set of health
+measurements.<br />
+Unsupervised learning is when instances only have descriptive feature
+values. E.g. clustering or dimensionality reduction.<br />
+Reinforcement learning algorithms are ones that are able to explore
+their environment and learn through trial and error. E.g. an agent
+learns how to navigate by being rewarded for successful navigation.</p>
+<p>What does it mean for a model to be underfit or overfit?<br />
+Underfitting is when a model is when a machine learning algorithm has
+not been given sufficient data to develop an accurate model.<br />
+Overfitting is when a model is too complex for its domain, and learns
+the anomalies or peculiarities of the data that it was trained on.</p>
+<p>What is the bias variance trade-off in model development?<br />
+Bias is indicative of wrong assumptions made by a model. A model with
+high bias will, on average, make predictions that are far from the true
+target value. Bias is often a result of underfitting.<br />
+Variance in indicative of a model’s sensitivity. A model with high
+variance will make very different predictions as a result of small
+changes in descriptive feature values. This is often a result of
+overfitting.<br />
+The trade-off or tension between bias and variance is that reducing one
+could lead to increasing the other. If you train a model more to avoid
+bias, you might end up with an overfit or high variance model. The point
+in training that minimizes bias and variance optimally has to be
+determined during model development.</p>
+<p>What is inductive, restriction, and preference bias in ML
+algorithms?<br />
+The inductive bias of a machine learning algorithm is the set of
+assumptions that it makes about the world. The restriction bias defines
+how the models an algorithm develops is restricted, e.g. linear models
+assume that points lie on a straight line. The preference bias defines
+how different models are compared or preferred, e.g. the model with
+smaller errors is selected over others.</p>
+<p>What are ill-posed problems?<br />
+An ill-posed problem is one where a unique solution cannot be determined
+using only the information that is available. This applies to machine
+learning because most ML problems are ill-posed, and multiple models can
+be developed to solve them.</p>
+<p>What is <span class="math inline"><em>k</em></span>-fold cross
+validation?<br />
+<span class="math inline"><em>k</em></span>-fold cross validation is the
+process of partitioning a dataset into <span
+class="math inline"><em>k</em></span> equal sized subsets, and running
+<span class="math inline"><em>k</em></span> training experiments where,
+for each experiment, one data-subset is used as a test set, and the
+other subsets are used for training and validation. The performance of
+an algorithm is then measured as the average of the <span
+class="math inline"><em>k</em></span> experiments. This technique is
+often used when there is little data.</p>
+<p>What is the difference between data missing completely at random, at
+random, and not at random?<br />
+Missing completely at random (MCAR) is when there is no link between the
+missing values and the actual data. E.g. power went out and caused a
+sensor to stop recording data.<br />
+Missing at random (MAR) is when data for a particular feature is
+missing, not because of the values of that feature, but because of some
+related (potentially recorded) feature. E.g. historically men are less
+likely to answer surveys on mental health.<br />
+Missing not at random (MNAR) is when there is a direct relationship
+between the actual value of a feature, and whether or not those values
+are missing. E.g. severely overweight people may not have a reported
+weight because it could not be measured.</p>
+<p>What is data leakage, test-train contamination, and target
+leakage?<br />
+Data leakage is when information appears in a data or training set that
+does not reflect the world as it would look when a model is
+deployed.<br />
+Test-train contamination is when information in the test set has
+influenced the values in the training set. E.g. test set values are used
+to impute missing values in the training set, thereby contaminating
+it.<br />
+Target leakage is when the training set contains values that aren’t
+available or set as they are during deployment. E.g. in a time-series
+context (like administering medicine to patients) a descriptive feature
+might change after a prediction has been made, and one risks leaking
+values that arose after a model’s prediction into the data that is used
+to train it for before the prediction.</p>
+<p>What is concept drift?<br />
+Concept drift is when the values of a target feature changes over time.
+E.g. inflation of asset prices would lead to a model trained on old data
+to be highly biased.</p>
+<p>What is sampling bias?<br />
+Sampling bias is when the data used to train a model does not accurately
+reflect the domain that has to be modeled.</p>
+
+
+<h3 id="data-to-insights-to-decisions">Data to insights to decisions</h3>
+<p>These notes are based on a university course, and draws from</p>
+<ul>
+<li>chapter 2 of ‘Fundamentals of Machine Learning for Predictive Data
+Analytics’ by Aoife D’Arcy et al.,</li>
+<li>course slides, and</li>
+<li>the internet.</li>
+</ul>
+<p>A variety of introductory concepts were covered, including:</p>
+<ul>
+<li>The analytics base table</li>
+</ul>
+<p>In order for predictions to be relevant, you have to make sure that
+they make useful predictions in the context where the predictive model
+is used. This often involves understanding a business’s needs, domain,
+and what sort of predictions would be relevant to the business. Don’t
+just use machine learning because it’s sexy - find out what the actual
+problems is and reason about whether a machine learning solution is a
+good fit, and then which approach is best.</p>
+<p>Other ideas were discussed but they were fairly trivial.</p>
+<p>What is the analytics base table?<br />
+It is the structured data from which predictive models learn. It is the
+result of collecting and organising data from within an
+organisation.</p>
+
+
+
+<h3 id="data-exploration">Data Exploration</h3>
+<p>These notes are based on a university course, and draws from</p>
+<ul>
+<li>chapter 3 of ‘Fundamentals of Machine Learning for Predictive Data
+Analytics’ by Aoife D’Arcy et al.,</li>
+<li>course slides, and</li>
+<li>the internet.</li>
+</ul>
+<h4 id="the-data-quality-report">The Data Quality Report</h4>
+<p>The data quality report is an important tool in getting to know the
+data we are studying.</p>
+<p>A data quality report must include:</p>
+<ul>
+<li>two tabular reports:
+<ul>
+<li>one for continuous features and one for categorical features</li>
+<li>columns for both features:
+<ul>
+<li>feature</li>
+<li>count</li>
+<li>% missing</li>
+<li>cardinality</li>
+</ul></li>
+<li>columns (statistical properties) for continuous features:
+<ul>
+<li>1st quartile</li>
+<li>mean</li>
+<li>median</li>
+<li>3rd quartile</li>
+<li>maximum</li>
+<li>Standard deviation</li>
+</ul></li>
+<li>columns (statistical properties) for categorical features:
+<ul>
+<li>mode</li>
+<li>mode frequency</li>
+<li>mode %</li>
+<li>2nd mode</li>
+<li>2nd mode frequency</li>
+<li>2nd mode %</li>
+</ul></li>
+<li>each row represents a specific feature</li>
+</ul></li>
+<li>visualizations that illustrate the distribution of the values in
+each feature
+<ul>
+<li>histogram for each continuous feature</li>
+<li>bar plot for each categorical feature</li>
+</ul></li>
+</ul>
+<table style="width:100%;">
+<caption>Table 1: Columns (statistical properties) for Continuous
+Features</caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Feature</th>
+<th style="text-align: center;">Count</th>
+<th style="text-align: center;">% Missing</th>
+<th style="text-align: center;">Cardinality</th>
+<th style="text-align: center;">1st Quartile</th>
+<th style="text-align: center;">Mean</th>
+<th style="text-align: center;">Median</th>
+<th style="text-align: center;">3rd Quartile</th>
+<th style="text-align: center;">Maximum</th>
+<th style="text-align: center;">Standard deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<caption>Table 2: Columns (statistical properties) for Categorical
+Features</caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Feature</th>
+<th style="text-align: center;">Count</th>
+<th style="text-align: center;">% Missing</th>
+<th style="text-align: center;">Cardinality</th>
+<th style="text-align: center;">Mode</th>
+<th style="text-align: center;">Mode Frequency</th>
+<th style="text-align: center;">Mode %</th>
+<th style="text-align: center;">2nd Mode</th>
+<th style="text-align: center;">2nd Mode Frequency</th>
+<th style="text-align: center;">2nd Mode %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+</tr>
+</tbody>
+</table>
+<h4 id="getting-to-know-the-data">3.2 Getting to Know the Data</h4>
+<p>These histograms and bar plots can show us if a dataset is skew</p>
+<p>During data exploration, we simply have to identify which plots match
+with which distributions. Later on we can use this information to decide
+which ML model to use.</p>
+<p>distributions and what they might mean: - uniform -&gt; perhaps IDs -
+normal -&gt; natrually occuring event - left skew -&gt;
+(<code>__^</code>) -&gt; values tend to be high - right skew -&gt;
+(<code>^__</code>) -&gt; values tend to be low - exponential -&gt;
+outliers are likely, and high values are not uncommon. - multimodal
+-&gt; frequent if a measurement is made between two groups. -&gt; note
+that the mean is no longer ‘representative’. -&gt; seperate peaks could
+associate with target feature.</p>
+<h4 id="identifying-data-quality-issues">3.3 Identifying Data Quality
+Issues</h4>
+<p>A data quality issue is loosely defined as anything unusual about the
+data.</p>
+<p>Common data quality issues include:</p>
+<ul>
+<li>missing values</li>
+<li>irregular cardinality</li>
+<li>outliers</li>
+</ul>
+<p>data quality issues can be due to:</p>
+<ul>
+<li>valid data
+<ul>
+<li>not necessarily correct, take note of issues that may influence the
+model</li>
+<li>make a ‘data quality plan’ = Feature + Data Quality Issue +
+Potential Handling Strategies</li>
+</ul></li>
+<li>invalid data
+<ul>
+<li>errors in generating the dataset, usually with calculating derived
+features</li>
+<li>these errors should be addressed
+<ul>
+<li>regenerate the analytics base table</li>
+<li>re-create the data quality report</li>
+</ul></li>
+</ul></li>
+</ul>
+<h5 id="missing-values">3.3.1 Missing Values</h5>
+<p>Why might there be missing values?</p>
+<ul>
+<li>mistakes in the data collection or derivation process</li>
+<li>some information would only be collected after a certain date</li>
+<li>people may choose not to provide certain information
+(e.g. age/gender)</li>
+</ul>
+<p>if &gt;= 60% of a feature is missing, it’s best to remove it.</p>
+<h5 id="irregular-cardinality">3.3.2 Irregular Cardinality</h5>
+<p>Cases:</p>
+<ol type="1">
+<li>Card = 1: if not due to error, remove</li>
+<li>Low card: check if continuous feature should be categorical</li>
+<li>Higher than expected: possibly because multiple values are used to
+represent the same thin, e.g. male, m, M, etc.</li>
+<li>High card: not a mistake, but a problem for certain algos; to be
+noted in data quality plan</li>
+</ol>
+<h5 id="outliers">3.3.3 Outliers</h5>
+<p>There are two types of outliers:</p>
+<ul>
+<li>invalid outliers
+<ul>
+<li>often due to entry errors</li>
+</ul></li>
+<li>valid outliers</li>
+</ul>
+<p>Ways of identifying outliers:</p>
+<ol type="1">
+<li>ensure that the min/max is within the range you’d expect (e.g. &gt;0
+for age)</li>
+<li>compare the gap between mean, quartiles, and max/min. large dif
+-&gt; outlier</li>
+<li>Use box plots or histograms to notice outliers</li>
+</ol>
+<p>Some ML algos don’t work well with outliers, so this should be noted
+in the data quality plan.</p>
+<h4 id="handling-data-quality-issues">3.4 Handling Data Quality
+Issues</h4>
+<h5 id="handling-missing-values">3.4.1 Handling Missing Values</h5>
+<p>Approaches for handling missing values:</p>
+<ol type="1">
+<li>Drop the feature with missing values</li>
+</ol>
+<ul>
+<li>(-) (often needless) loss of data</li>
+</ul>
+<ol start="2" type="1">
+<li>Derive a binary feature to indicate missing values and discard
+original feature</li>
+</ol>
+<ul>
+<li>(+) missingness has relationship to target value</li>
+</ul>
+<ol start="3" type="1">
+<li>Complete case analysis</li>
+</ol>
+<ul>
+<li>remove instances with missing values.</li>
+<li>(-) may remove too many instances or introduce bias</li>
+</ul>
+<ol start="4" type="1">
+<li>Impute missing values</li>
+</ol>
+<ul>
+<li>Replaces missing values with plausible estimated values
+<ul>
+<li>Continuous: media or mean (or a model)</li>
+<li>Categorical: mode (or a model)</li>
+</ul></li>
+<li>(-) risks biasing dataset (avoid imputation if &gt;30% of values are
+missing)</li>
+<li>(+) avoids data loss</li>
+</ul>
+<h5 id="handling-outliers">3.4.2 Handling Outliers</h5>
+<p>Approaches for handling outliers: 1. Clamping values exceeding upper
+and lower thresholds to those thresholds - Thresholds can be manually
+set, or calculated from data. E.g. - quartiles, plus/minus 1.5 times
+inter-quartile range - 2 standard deviations from the mean (if data is
+normally distributed)</p>
+<h4 id="advanced-data-exploration">3.5 Advanced Data Exploration</h4>
+<h5 id="visualizing-relationships-between-features">3.5.1 Visualizing
+Relationships between Features</h5>
+<h5 id="measuring-covariance-and-correlation">3.5.2 Measuring Covariance
+and Correlation</h5>
+<h4 id="data-preparation">3.6 Data Preparation</h4>
+<h5 id="normalization">3.6.1 Normalization</h5>
+<h5 id="binning">3.6.2 Binning</h5>
+<h5 id="sampling">3.6.3 Sampling</h5>
+<h4 id="summary">3.7 Summary</h4>
+
+
+<h3 id="similarity-based-learning">Similarity Based Learning</h3>
+<p>These notes are based on a university course, and draws from</p>
+<ul>
+<li>Chapter 5 of ‘Fundamentals of Machine Learning for Predictive Data
+Analytics’ by Aoife D’Arcy et al.,</li>
+<li>course slides, and</li>
+<li>the internet.</li>
+</ul>
+<p>The following concepts were covered:</p>
+<ul>
+<li>Inductive bias of similarity based learning (SBL)</li>
+<li>The core components of a SBL model</li>
+<li>The nearest neighbour algorithm</li>
+<li>Lazy learning</li>
+<li>The <span class="math inline"><em>k</em></span>-nearest neighbour
+algorithm (<span class="math inline"><em>k</em></span>NN)</li>
+<li>Similarity measures for <span
+class="math inline"><em>k</em></span>NN</li>
+<li><span class="math inline"><em>k</em></span>NN for regression</li>
+<li>Data quality issues</li>
+</ul>
+<p>What is the inductive bias of similarity based learning?<br />
+The inductive bias of similarity based learning (SBL) is that instances
+that have similar descriptive feature values should have similar target
+feature values. SBL is a form of supervised learning.</p>
+<p>How can SBL be applied to classification, regression, and
+imputation?</p>
+<p>What are the core components of a SBL model?<br />
+Any similarity based model has to have a set of memorised
+descriptive-target feature mappings, and a similarity measure or metric
+defined on the descriptive feature space.</p>
+<p>What is the nearest neighbour algorithm?<br />
+The nearest neighbour algorithm predicts the target value of a query
+instance by assigning it the target value of the training instance that
+is most similar, according to the similarity metric defined on the
+descriptive features.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Instance:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, descriptive, target):</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.descriptive <span class="op">=</span> descriptive</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.target <span class="op">=</span> target</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>descriptive<span class="sc">}</span><span class="ss"> -&gt; </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>target<span class="sc">}</span><span class="ss">&quot;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nearest_neighbour_prediction(training, metric, query):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  nn_dist <span class="op">=</span> math.inf</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  nn_prediction <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> t_inst <span class="kw">in</span> training:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    dist <span class="op">=</span> metric(t_inst.descriptive, query.descriptive)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> dist <span class="op">&lt;</span> nn_dist:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>      nn_dist <span class="op">=</span> dist</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>      nn_prediction <span class="op">=</span> t_inst.target</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> nn_prediction</span></code></pre></div>
+<p>What is lazy learning?<br />
+Lazy learning is when a model delays processing training data until a
+prediction is needed. The nearest neighbour algorithm is an example of
+lazy learning because it only uses training data when actual
+measurements have to be made with the query instance.</p>
+<p>How does the <span class="math inline"><em>k</em></span>-nearest
+neighbour algorithm (<span class="math inline"><em>k</em></span>NN)
+work?<br />
+The <span class="math inline"><em>k</em></span>NN algorithm finds the
+<span class="math inline"><em>k</em></span> training instances that are
+closest to the query instance, and use them to predict the target value
+for the query instance.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> k_nearest_neighbour_prediction(training, metric, query, k):</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  k_nn <span class="op">=</span> []</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> t_inst <span class="kw">in</span> training:</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    dist <span class="op">=</span> metric(t_inst.descriptive, query.descriptive)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(k_nn) <span class="op">&lt;</span> k:</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      k_nn.append((dist, t_inst))</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>      farthest_nn <span class="op">=</span> <span class="bu">max</span>(k_nn, key<span class="op">=</span><span class="kw">lambda</span> x : x[<span class="dv">0</span>])</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> dist <span class="op">&lt;</span> farthest_nn[<span class="dv">0</span>]:</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        k_nn.remove(farthest_nn)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        k_nn.append((dist, t_inst))</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> select(query, k_nn)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> majority(query, k_nn):</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  counts <span class="op">=</span> {}</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> n <span class="kw">in</span> k_nn:</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n.target <span class="kw">not</span> <span class="kw">in</span> counts:</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      counts[n.target] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    counts[n.target] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">max</span>(counts, key<span class="op">=</span>counts.get)</span></code></pre></div>
+<ul>
+<li>Similarity measures for <span
+class="math inline"><em>k</em></span>NN</li>
+<li><span class="math inline"><em>k</em></span>NN for regression</li>
+<li>Data quality issues</li>
+</ul>
+  </main>
+  <wle-footer></wle-footer>
+</body>
+</html>
