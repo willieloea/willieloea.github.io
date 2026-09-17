@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WLE Blog</title>
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <wle-header></wle-header>
+  <main>
+  <h1>A trivial example of algorithmic analysis</h1>
+  <p><i>2026-09-17</i></p>
+
+  <h2>Introduction</h2>
+  <p>
+  I'm writing this for someone who hasn't studied computer science, but would
+  like to know something about what the field involves.
+  </p>
+  <h2>Background</h2>
+  <p>
+  One fundamental discipline within computer science is called <i>'algorithmic
+  analysis'</i> - it is the study of algorithms and their efficiency. An
+  algorithm is simply a sequence of instructions. The efficiency of an algorithm
+  is measured by how much mechanical work it takes to execute all the
+  instructions (time), and/or how much space is used in memory to perform the
+  instructions (space). I'll show how an algorithm can be analysed by working
+  through a famous example.
+  </p>
+
+  <h2>Analysis Example</h2>
+  <p>
+  Suppose you want to add the numbers 1, 2, ..., 100 together. A simple solution
+  is to iterate over the whole series of numbers, and add them to an
+  accumilating variable, like so:
+  <pre><code>
+    sum = 0
+    for i in (1, 2, ..., 100):
+        sum = sum + i
+  </code></pre>
+  Another solution is to notice that 1 + 100 = 101, 2 + 99 = 101, ...,
+  50 + 51 = 101. With this, we can calculate our answer as follows:
+  <pre><code>
+    sum = 101 * 50
+  </code></pre>
+  where <code>*</code> means multiplication.
+  </p>
+  <p>
+  Notice how the first solution requires that we add two numbers together every
+  time the loop iterates. In the end, we will perform addition 100 times. In the
+  second solution, we have to multiply two numbers together. For humans, it
+  might be easier to add two numbers than to multiply two very big numbers
+  together, but because multiplication is such a common mathematical operation,
+  computers have components built into them so that they can perform
+  multiplication just as easily as they could add two numbers together. If it is
+  the case that your computer has such a component, the second algorithm will
+  require a single instruction to be executed once, while the first algorithm
+  will require adition to be executed 100 times.
+  </p>
+
+  <h2>Generalisation</h2>
+  <p>
+  We can generalise this and ask: What will be more efficient if we had to sum
+  the numbers 1, 2, ..., <i>n</i> together? The first algorithm would look like
+  this:
+  <pre><code>
+    sum = 0
+    for i in (1, 2, ..., n):
+        sum = sum + i
+  </code></pre>
+  And the second algorithm would look like this:
+  <pre><code>
+    sum = (n + 1) * (n // 2)
+  </code></pre>
+  where <code>//</code> means floor division (e.g. <code>3 // 2 = 1</code>, or
+  <code>100 // 2 = 50</code>). The first algorithm now requires addition to be
+  performed <i>n</i> times, while alogrithm two requires one addition, one
+  multiplication, and one floor division operation to be performed, regardless
+  of the value of <i>n</i>. As computer scientists, we summarise this by saying
+  that the first algorithm <i>grows by O(n)</i> (it grows linearly as the input
+  grows), while the second grows by O(1) (the amount of computation that has to
+  be done remains constant, regardless of the size of the input). Therefore, the
+  second algorithm will be more efficient thann the first.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+  Algorithmic analysis is a fundamental discipline within computer science
+  because of the importance of the efficiency of algorithms. It helps us know
+  which algorithms are efficient, and whether they can be used to make solutions
+  to problems tractable.
+  </p>
+  </main>
+  <wle-footer></wle-footer>
+</body>
+</html>
