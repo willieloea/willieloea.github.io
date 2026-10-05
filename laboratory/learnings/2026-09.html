@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WLE Learnings</title>
+  <script src="/components/header.js" type="text/javascript" defer></script>
+  <script src="components/footer.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <wle-header></wle-header>
+  <main>
+  <h1>Learning/Building Log: September 2026</h1>
+<p>In September I studied:</p>
+<ul>
+<li>Machine Learning</li>
+<li>Python</li>
+<li>Linux/C</li>
+<li>South African History</li>
+</ul>
+<h2 id="machine-learning">Machine Learning</h2>
+<p>Learnt about error based learning (linear and logistic regression)
+and about neural networks (finally).</p>
+
+<h2 id="python">Python</h2>
+<p>I finished reading the <a
+href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a>
+on the 15th.</p>
+
+<h2 id="linuxc">Linux/C</h2>
+<h3 id="linux">Linux</h3>
+<p>Q: How are file descriptors used when you open a file in C or
+Python?</p>
+<p>A: A C or Python program will execute as a process. This process will
+have a process control block (PCB) which will have three file
+descriptors (0: <code>stdin</code>, 1: <code>stdout</code>, 2:
+<code>stderr</code>) by default. If your program opens a file, a new
+file descriptor (FD) will be created, so that you can read from or write
+to that file. The FD will have an ID, e.g. 3, which your program can
+then use to read or write data, e.g. "read 8 bytes from the file." The
+OS has a global "Open File Description Table", which stores information
+like a file's inode, current access/index/offset point, read/write
+permission, and other information. The inode stores the actual address
+on disk.</p>
+
+<h3 id="c">C</h3>
+<p>I started reading "C How to program (8th edition)"</p>
+
+<h2 id="south-african-history">South African History</h2>
+<p>I learnt a lot about South African history this month. I learnt that
+the Khoi and San people were the first people to live in SA, they have
+lived here for thousands of years.
+
+Around 300 CE, Bantu speaking people arrived in the north eastern side of SA,
+and integrated and displaced
+the Khoi or San.
+
+Around 1000 CE - 1300 CE, there was a relatively
+powerful pre-colonial empire in SA called the Mapungupwe empire.
+
+Jan van
+Ribiek crashed in the Cape ~1647, which lead to him arriving in SA in
+1652 to setup a rest station for the Dutch in the Cape.
+
+The Franchise and Ballot act was passed in 1892. It increased the requirements
+of enfranchisement which meant that many black people living in the Cape Colony
+were disenfranchised. It was driven by Cecil John Rhodes after he saw that
+greater political engagement by the black populus would lead to him losing
+power.
+
+The Natives Land act was passed in 1913, which made it illegal for land to be
+sold between races, and black poeple were left with only 13% of the land in
+South Africa.
+
+Hendrik Johanness
+van der Bijl was an incredibly important scientist/engineer who
+played a massive role in the industrialization of SA in the 20th
+century. A Hank Reardan like character - it's as if Elon Musk was born
+~50 years earlier and came back to SA at some point.
+
+The National Party
+was elected in 1948, and then Apartheid started.
+
+In 1955, several
+political groups wrote the 'Freedom Charter' which articulated an
+antithesis to the Apartheid system which SA could strive towards, and
+many of its ideas, like equal representation, and more equal ownership
+of South African land, were later incorporated in the current SA
+constitution which was signed into law in 1996.
+
+Steve Biko was the
+founder of the 'Black Consciousness Movement' which said that black
+people had been so oppressed and tormented that they did not view
+themselves with high enough regard. He said that black people had to
+become aware of their own self worth, that they did not have to wait for
+the Apartheid government to treat them with dignity - they could find
+all the approval and respect they needed from within themselves - and
+Biko thought this to be a psychological hurdle many black people had to
+overcome. His ideas were influenced by W. E. B Du Bois.
+
+I also learnt
+that many institutions actually improved after Apartheid ended - SARS
+would be one example. The ANC were also very responsible when it came to
+national debt :) My respect for the South African constitution grew a
+lot, and it's incredible when you appreciate all that did not go wrong
+in the period of ~1990-2005.
+
+I learnt a lot by listening to Mbuyiseni
+Ndlozi's podcast, and his appearance on/collaboration with the SMWX
+podcast - it's a goldmine of South African history and politics that
+influence the country today. Although I don't aggree with everything he says,
+Mbuyiseni has a beautiful mind.</p>
+</body>
+</html>
